@@ -1,0 +1,220 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1F2833;
+    color: #222222; /* Text color for better contrast */
+    margin: 0; 
+}
+
+.viewtitle {
+    margin-left: 16px;
+    margin-bottom: 10px;
+    color: #f2f2f2;
+}
+
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    width: 100%;
+    max-width: 1890px; /* Set a maximum width */
+    margin: 0 auto 20px; /* Center the table and add a bottom margin */
+    border-spacing: 0;
+    border-collapse: collapse;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Add border to separate cells */
+}
+
+th {
+    background: linear-gradient(to top, #007BFF, #00BFFF); /* Blue gradient */
+    color: #000000; /* Header text color */
+}
+
+
+tr {
+    background-color: #ffffff;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+a {
+    text-decoration: none;
+    color: #007BFF; /* Default link color */
+}
+
+a:visited {
+    color: #007BFF; /* Color for visited links */
+}
+    
+
+.navbar {
+    background-color: #f3f3f3;
+    color: rgb(13, 184, 236);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.navigation-links {
+    display: flex; /* Align horizontally */
+}
+
+.about, .service, .contact {
+    margin-left: 10px; /* Add margin between the links for spacing */
+}
+
+/* Optionally, you can add more styling for the links if needed */
+.navigation-links a {
+    text-decoration: none;
+    color: #007BFF;
+    margin: 0 15px; /* Add margin on both sides for spacing between links */
+}
+
+.searchbar, .about, .service, .contact {
+    margin-right: 20px; /* Add margin between the links for spacing */
+}
+
+.searchbar {
+    display: flex; /* Align horizontally */
+    margin-left: 10px; /* Add margin between the search bar and the links */
+}
+
+.searchbar input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+.searchbar button {
+    padding: 8px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+
+/* Navigation link styles */
+.navbar a {
+    margin: 0; /* Reset margin to remove extra space */
+  }
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+
+.logo1 {
+    margin-left: 10px;
+}
+
+.searchbar {
+    display: flex;
+    margin-left: 10px; /* Add margin to the search bar */
+}
+
+input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+/* Sidebar styles */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: 30px;
+}
+
+/* Content styles */
+.column-50 {
+    width: 50%;
+    margin: 20px auto;
+}
+
+.contentcontainer {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+}
+
+
+.zoomedImageContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+}
+
+.zoomedImageContainer img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
